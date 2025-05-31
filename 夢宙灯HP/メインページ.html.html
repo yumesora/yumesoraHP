@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>夢宙灯公式ホームページ</title>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'M PLUS Rounded 1c', sans-serif;
+      background: url('background2.jpg') no-repeat center top fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      color: #ffffff;
+    }
+
+    header.main-header {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 1rem;
+      text-align: center;
+    }
+
+    header.main-header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    header.main-header nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-size: 1.2rem;
+    }
+
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1rem;
+    }
+
+    section.content {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 1.5rem;
+      border-radius: 10px;
+      max-width: 700px;
+      width: 100%;
+      color: #fff;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    section.content h2 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+
+    section.content p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .highlight {
+      font-weight: bold;
+    }
+
+    .works-gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+
+    .works-gallery img {
+      width: 220px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+    }
+
+    .works-gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .sns-links {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .sns-links a {
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 1rem;
+      color: #00e5ff;
+      background-color: #002c34;
+      border: 2px solid #00e5ff;
+      box-shadow:
+        0 0 8px #00e5ff,
+        0 0 20px #00e5ff,
+        0 0 30px #00e5ff;
+      transition: all 0.3s ease-in-out;
+      animation: glowPulse 2.5s infinite alternate;
+    }
+
+    .sns-links a:hover,
+    .x-button:hover {
+      box-shadow:
+        0 0 10px #00e5ff,
+        0 0 25px #00e5ff,
+        0 0 35px #00e5ff;
+    }
+
+    @keyframes glowPulse {
+      0% {
+        box-shadow:
+          0 0 5px #00e5ff,
+          0 0 10px #00e5ff,
+          0 0 15px #00e5ff;
+      }
+      100% {
+        box-shadow:
+          0 0 10px #00e5ff,
+          0 0 20px #00e5ff,
+          0 0 30px #00e5ff;
+      }
+    }
+
+    .x-button {
+      display: inline-block;
+      margin-top: 1rem;
+      color: #00e5ff;
+      background-color: #002c34;
+      border: 2px solid #00e5ff;
+      border-radius: 8px;
+      padding: 6px 14px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow:
+        0 0 8px #00e5ff,
+        0 0 20px #00e5ff,
+        0 0 30px #00e5ff;
+      animation: glowPulse 2.5s infinite alternate;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #111;
+      color: #888;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="main-header">
+    <h1>夢宙灯公式ホームページ</h1>
+    <nav>
+      <a href="#about">経歴</a>
+      <a href="#works">作品一覧</a>
+      <a href="#contact">お問い合わせ</a>
+    </nav>
+  </header>
+
+  <div class="main-content">
+    <section class="content" id="about">
+    
+      <p>球体関節人形作家「夢宙灯（ゆめそらあかり）」のサイトです。</p>
+      <p>怪しく美しい、幻想的な生き物たちを取り扱っています。</p>
+    </section>
+
+    <section class="content">
+      <h2>展示予定</h2>
+      <p class="highlight">2025.7.29 - 8.10 『異変』 ギャラリーカフェオンディーヌ</p>
+      <a href="https://x.com/4raichi4/status/1924701963641655566" target="_blank" rel="noopener noreferrer" class="x-button">➡ 詳細はこちら</a>
+    </section>
+
+    <section class="content" id="works">
+      <h2>作品一覧</h2>
+      <div class="works-gallery">
+        <img src="work1.jpg" alt="作品1" />
+        <img src="work2.jpg" alt="作品2" />
+        <img src="work3.jpg" alt="作品3" />
+      </div>
+      <a class="x-button" href="作品一覧.html">▶ 作品一覧を見る</a>
+    </section>
+
+    <section class="content" id="contact">
+      <h2>お問い合わせ</h2>
+      <p>各SNSでのDMにてお待ちしております。</p>
+      <div class="sns-links">
+        <a href="https://x.com/yumesora_akari" target="_blank" rel="noopener noreferrer">X</a>
+        <a href="https://www.instagram.com/yumesora_akari/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 夢宙灯</p>
+  </footer>
+</body>
+</html>
